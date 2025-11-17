@@ -18,15 +18,32 @@ public class ScreenController {
     public void switchTo(String fxmlPath) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
         Parent root = loader.load();
-        stage.setScene(new Scene(root));
+
+        Scene scene = new Scene(root);
+
+        // ADD CSS FILE HERE
+        scene.getStylesheets().add(
+                getClass().getResource("/com/example/cvbuilder/styles.css").toExternalForm()
+        );
+
+        stage.setScene(scene);
         stage.show();
     }
 
     public FXMLLoader switchToWithLoader(String fxmlPath) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
         Parent root = loader.load();
-        stage.setScene(new Scene(root));
+
+        Scene scene = new Scene(root);
+
+        // ADD CSS FILE HERE
+        scene.getStylesheets().add(
+                getClass().getResource("/com/example/cvbuilder/styles.css").toExternalForm()
+        );
+
+        stage.setScene(scene);
         stage.show();
+
         return loader;
     }
 }

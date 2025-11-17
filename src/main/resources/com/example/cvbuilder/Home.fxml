@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.cvbuilder.controller.HomeController"
-            prefWidth="600" prefHeight="400">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.HomeController">
 
     <!-- Main Title -->
-    <Text text="CV Builder"
-          layoutX="240" layoutY="80"
-          style="-fx-font-size: 32px;" />
+    <Text layoutX="128.0" layoutY="88.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="Create Your Own CV" />
 
-    <!-- New Subtitle -->
-    <Text text="Build your CV and enlighten your Career!!!"
-          layoutX="160" layoutY="120"
-          style="-fx-font-size: 18px; -fx-fill: #444;" />
+    <!-- Subtitle -->
+    <Text layoutX="130" layoutY="140" style="-fx-font-size: 18px; -fx-fill: #444;" text="Build your CV and enlighten your Career!!!" />
 
-    <!-- Button -->
-    <Button text="Create CV"
-            layoutX="240" layoutY="200"
-            prefWidth="120"
-            onAction="#gotoForm" />
+    <!-- Main Button -->
+    <Button layoutX="235" layoutY="220" onAction="#gotoForm" prefHeight="40" prefWidth="130" style="-fx-font-size: 16px;-fx-font-weight: bold;" text="Create CV" />
 
 </AnchorPane>

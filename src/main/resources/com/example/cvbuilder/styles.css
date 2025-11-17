@@ -1,0 +1,79 @@
+.root {
+    -fx-background-color: #f5f5f5;
+}
+
+.button {
+    -fx-background-color: #f3d371;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+}
+
+.text {
+    -fx-fill: #333;
+}
+
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a4d69;
+}
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.data-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #000;
+}
+
+.preview-area {
+    -fx-background-color: #f6f9fc;
+    -fx-border-color: #c3c9d5;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+/* Form Labels */
+.form-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+/* TextFields */
+.form-input {
+    -fx-padding: 6;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-border-color: #aaa;
+    -fx-border-radius: 6;
+}
+
+/* TextAreas */
+.form-textarea {
+    -fx-padding: 6;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-border-color: #aaa;
+    -fx-border-radius: 6;
+}
+
+/* Main Button */
+.primary-button {
+    -fx-background-color: #f3d371;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.primary-button:hover {
+    -fx-background-color: #f6be2d;
+}
