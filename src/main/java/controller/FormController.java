@@ -39,7 +39,7 @@ public class FormController {
                 "/com/example/cvbuilder/Preview.fxml"
         );
 
-        //PreviewController previewController = loader.getController();
-        //previewController.loadData(cv);
+        PreviewController previewController = loader.getController();
+        previewController.loadData(cv);
     }
 }
