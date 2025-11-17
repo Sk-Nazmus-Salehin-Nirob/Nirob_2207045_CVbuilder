@@ -3,41 +3,45 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="700" prefWidth="800" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.PreviewController">
+<AnchorPane prefHeight="700" prefWidth="800"
+            stylesheets="@styles.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.cvbuilder.controller.PreviewController">
 
-    <!-- Title -->
-    <Label layoutX="268.0" layoutY="20" prefHeight="40.0" prefWidth="236.0" styleClass="title-label" text="Currliculum Vitae" />
+    <Label layoutX="320" layoutY="20" styleClass="title" text="CV Preview"/>
 
-    <!-- Full Name -->
-    <Label layoutX="40" layoutY="80" styleClass="field-label" text="Full Name:" />
-    <Label fx:id="nameLabel" layoutX="200" layoutY="80" styleClass="data-label" />
+    <Button text="← Back"
+            layoutX="20" layoutY="20"
+            onAction="#goBack"
+            styleClass="back-button"/>
 
-    <!-- Email -->
-    <Label layoutX="40" layoutY="120" styleClass="field-label" text="Email Address:" />
-    <Label fx:id="emailLabel" layoutX="200" layoutY="120" styleClass="data-label" />
+    <Label layoutX="40" layoutY="80" text="Full Name:"/>
+    <Label fx:id="nameLabel" layoutX="200" layoutY="80"/>
 
-    <!-- Phone -->
-    <Label layoutX="40" layoutY="160" styleClass="field-label" text="Phone Number:" />
-    <Label fx:id="phoneLabel" layoutX="200" layoutY="160" styleClass="data-label" />
+    <Label layoutX="40" layoutY="120" text="Email Address:"/>
+    <Label fx:id="emailLabel" layoutX="200" layoutY="120"/>
 
-    <!-- Address -->
-    <Label layoutX="40" layoutY="200" styleClass="field-label" text="Address:" />
-    <Label fx:id="addressLabel" layoutX="200" layoutY="200" styleClass="data-label" />
+    <Label layoutX="40" layoutY="160" text="Phone Number:"/>
+    <Label fx:id="phoneLabel" layoutX="200" layoutY="160"/>
 
-    <!-- Education Section -->
-    <Label layoutX="40" layoutY="240" styleClass="field-label" text="Educational Qualifications:" />
-    <TextArea fx:id="educationText" editable="false" layoutX="40" layoutY="265" prefHeight="80" prefWidth="720" styleClass="preview-area" />
+    <Label layoutX="40" layoutY="200" text="Address:"/>
+    <Label fx:id="addressLabel" layoutX="200" layoutY="200"/>
 
-    <!-- Skills Section -->
-    <Label layoutX="40" layoutY="360" styleClass="field-label" text="Skills:" />
-    <TextArea fx:id="skillsText" editable="false" layoutX="40" layoutY="385" prefHeight="70" prefWidth="720" styleClass="preview-area" />
+    <Label layoutX="40" layoutY="240" text="Educational Qualifications:"/>
+    <TextArea fx:id="educationText" layoutX="200" layoutY="235"
+              prefHeight="80" prefWidth="560" editable="false"/>
 
-    <!-- Experience Section -->
-    <Label layoutX="40" layoutY="470" styleClass="field-label" text="Work Experience:" />
-    <TextArea fx:id="experienceText" editable="false" layoutX="40" layoutY="495" prefHeight="70" prefWidth="720" styleClass="preview-area" />
+    <Label layoutX="40" layoutY="340" text="Skills:"/>
+    <TextArea fx:id="skillsText" layoutX="200" layoutY="335"
+              prefHeight="80" prefWidth="560" editable="false"/>
 
-    <!-- Projects Section -->
-    <Label layoutX="40" layoutY="580" styleClass="field-label" text="Projects:" />
-    <TextArea fx:id="projectsText" editable="false" layoutX="40" layoutY="605" prefHeight="80" prefWidth="720" styleClass="preview-area" />
+    <Label layoutX="40" layoutY="440" text="Work Experience:"/>
+    <TextArea fx:id="experienceText" layoutX="200" layoutY="435"
+              prefHeight="80" prefWidth="560" editable="false"/>
+
+    <Label layoutX="40" layoutY="540" text="Projects:"/>
+    <TextArea fx:id="projectsText" layoutX="200" layoutY="535"
+              prefHeight="80" prefWidth="560" editable="false"/>
 
 </AnchorPane>

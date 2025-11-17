@@ -5,52 +5,52 @@
 
 <AnchorPane prefHeight="700" prefWidth="800" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.FormController">
 
-    <VBox layoutX="40" layoutY="30" spacing="20">
+    <Button layoutX="20" layoutY="20" onAction="#goBack" styleClass="back-button" text="← Back" />
+
+    <VBox layoutX="40" layoutY="70" spacing="20">
 
         <HBox spacing="20">
-            <Label prefHeight="22.0" prefWidth="191.0" styleClass="form-label" text="Full Name:" />
-            <TextField fx:id="fullNameField" prefHeight="34.0" prefWidth="527.0" styleClass="form-input" />
+            <Label prefHeight="22.0" prefWidth="187.0" styleClass="form-label" text="Full Name:" />
+            <TextField fx:id="fullNameField" prefHeight="34.0" prefWidth="498.0" styleClass="form-input" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="22.0" prefWidth="191.0" styleClass="form-label" text="Email Address:" />
-            <TextField fx:id="emailField" prefHeight="34.0" prefWidth="527.0" styleClass="form-input" />
+            <Label prefHeight="22.0" prefWidth="188.0" styleClass="form-label" text="Email Address:" />
+            <TextField fx:id="emailField" prefHeight="34.0" prefWidth="495.0" styleClass="form-input" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="22.0" prefWidth="190.0" styleClass="form-label" text="Phone Number:" />
-            <TextField fx:id="phoneField" prefHeight="34.0" prefWidth="527.0" styleClass="form-input" />
+            <Label prefHeight="22.0" prefWidth="187.0" styleClass="form-label" text="Phone Number:" />
+            <TextField fx:id="phoneField" prefHeight="34.0" prefWidth="494.0" styleClass="form-input" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="22.0" prefWidth="186.0" styleClass="form-label" text="Address:" />
-            <TextField fx:id="addressField" prefHeight="34.0" prefWidth="531.0" styleClass="form-input" />
+            <Label prefHeight="22.0" prefWidth="190.0" styleClass="form-label" text="Address:" />
+            <TextField fx:id="addressField" prefHeight="34.0" prefWidth="489.0" styleClass="form-input" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="82.0" prefWidth="188.0" styleClass="form-label" text="Educational Qualifications:" />
-            <TextArea fx:id="educationArea" prefHeight="80" prefWidth="529.0" styleClass="form-textarea" />
+            <Label prefHeight="74.0" prefWidth="188.0" styleClass="form-label" text="Educational Qualifications:" />
+            <TextArea fx:id="educationArea" prefHeight="74.0" prefWidth="491.0" styleClass="form-textarea" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="80.0" prefWidth="192.0" styleClass="form-label" text="Skills:" />
-            <TextArea fx:id="skillsArea" prefHeight="80" prefWidth="526.0" styleClass="form-textarea" />
+            <Label prefHeight="70.0" prefWidth="185.0" styleClass="form-label" text="Skills:" />
+            <TextArea fx:id="skillsArea" prefHeight="70.0" prefWidth="494.0" styleClass="form-textarea" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="82.0" prefWidth="190.0" styleClass="form-label" text="Work Experience:" />
-            <TextArea fx:id="experienceArea" prefHeight="82.0" prefWidth="528.0" styleClass="form-textarea" />
+            <Label prefHeight="59.0" prefWidth="187.0" styleClass="form-label" text="Work Experience:" />
+            <TextArea fx:id="experienceArea" prefHeight="59.0" prefWidth="490.0" styleClass="form-textarea" />
         </HBox>
 
         <HBox spacing="20">
-            <Label prefHeight="79.0" prefWidth="194.0" styleClass="form-label" text="Projects:" />
-            <TextArea fx:id="projectsArea" prefHeight="80" prefWidth="524.0" styleClass="form-textarea" />
+            <Label prefHeight="59.0" prefWidth="188.0" styleClass="form-label" text="Projects:" />
+            <TextArea fx:id="projectsArea" prefHeight="56.0" prefWidth="494.0" styleClass="form-textarea" />
         </HBox>
 
     </VBox>
 
-    <!-- Centered Button -->
-    <Button layoutX="325" layoutY="642.0" onAction="#gotoPreview" prefHeight="34.0" prefWidth="150" styleClass="primary-button" text="Generate CV" />
-   <VBox layoutX="51.0" layoutY="277.0" prefHeight="80.0" prefWidth="50.0" />
+    <Button layoutX="325" layoutY="650" onAction="#gotoPreview" styleClass="primary-button" text="Generate CV" />
 
 </AnchorPane>

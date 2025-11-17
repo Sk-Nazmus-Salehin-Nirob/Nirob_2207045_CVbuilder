@@ -1,5 +1,6 @@
 package com.example.cvbuilder.controller;
 
+import com.example.cvbuilder.main;
 import com.example.cvbuilder.model.CVModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -17,6 +18,13 @@ public class PreviewController {
     @FXML private TextArea experienceText;
     @FXML private TextArea projectsText;
 
+    // -------------------- BACK BUTTON --------------------
+    @FXML
+    private void goBack() throws Exception {
+        main.screenController.switchTo("/com/example/cvbuilder/Form.fxml");
+    }
+
+    // -------------------- LOAD DATA --------------------
     public void loadData(CVModel cv) {
 
         nameLabel.setText(cv.getFullName());
