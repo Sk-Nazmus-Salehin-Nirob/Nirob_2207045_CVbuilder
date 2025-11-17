@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cvbuilder.controller.FormController"
+            prefWidth="800" prefHeight="700">
+
+    <Label text="Full Name:" layoutX="40" layoutY="40"/>
+    <TextField fx:id="fullNameField" layoutX="200" layoutY="35" prefWidth="400"/>
+
+    <Label text="Email Address:" layoutX="40" layoutY="90"/>
+    <TextField fx:id="emailField" layoutX="200" layoutY="85" prefWidth="400"/>
+
+    <Label text="Phone Number:" layoutX="40" layoutY="140"/>
+    <TextField fx:id="phoneField" layoutX="200" layoutY="135" prefWidth="400"/>
+
+    <Label text="Address:" layoutX="40" layoutY="190"/>
+    <TextField fx:id="addressField" layoutX="200" layoutY="185" prefWidth="400"/>
+
+    <Label text="Educational Qualifications:" layoutX="40" layoutY="240"/>
+    <TextArea fx:id="educationArea" layoutX="200" layoutY="235"
+              prefWidth="400" prefHeight="80"/>
+
+    <Label text="Skills:" layoutX="40" layoutY="335"/>
+    <TextArea fx:id="skillsArea" layoutX="200" layoutY="330"
+              prefWidth="400" prefHeight="80"/>
+
+    <Label text="Work Experience:" layoutX="40" layoutY="430"/>
+    <TextArea fx:id="experienceArea" layoutX="200" layoutY="425"
+              prefWidth="400" prefHeight="80"/>
+
+    <Label text="Projects:" layoutX="40" layoutY="525"/>
+    <TextArea fx:id="projectsArea" layoutX="200" layoutY="520"
+              prefWidth="400" prefHeight="80"/>
+
+    <Button text="Generate CV" layoutX="350" layoutY="630"
+            onAction="#gotoPreview" prefWidth="150"/>
+</AnchorPane>
