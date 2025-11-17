@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="700" prefWidth="800" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.FormController">
+<AnchorPane prefHeight="700" prefWidth="800" styleClass="background-pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.FormController">
 
     <Button layoutX="20" layoutY="20" onAction="#goBack" styleClass="back-button" text="← Back" />
 
@@ -51,6 +51,6 @@
 
     </VBox>
 
-    <Button layoutX="325" layoutY="650" onAction="#gotoPreview" styleClass="primary-button" text="Generate CV" />
+    <Button layoutX="305.0" layoutY="693.0" onAction="#gotoPreview" prefHeight="50.0" prefWidth="206.0" styleClass="primary-button" text="Generate CV" />
 
 </AnchorPane>

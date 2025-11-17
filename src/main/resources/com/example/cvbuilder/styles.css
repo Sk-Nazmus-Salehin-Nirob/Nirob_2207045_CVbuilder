@@ -3,13 +3,13 @@
 }
 
 .button {
-    -fx-background-color: #f3d371;
+    -fx-background-color: #edc231;
     -fx-text-fill: white;
     -fx-background-radius: 10px;
 }
 
 .button:hover {
-    -fx-background-color: #f6be2d;
+    -fx-background-color: #edaf09;
 }
 
 .text {
@@ -39,7 +39,7 @@
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
     -fx-padding: 8px;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
 }
 
 /* Form Labels */
@@ -52,7 +52,7 @@
 /* TextFields */
 .form-input {
     -fx-padding: 6;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
     -fx-background-radius: 6;
     -fx-border-color: #aaa;
     -fx-border-radius: 6;
@@ -61,7 +61,7 @@
 /* TextAreas */
 .form-textarea {
     -fx-padding: 6;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
     -fx-background-radius: 6;
     -fx-border-color: #aaa;
     -fx-border-radius: 6;
@@ -69,7 +69,7 @@
 
 /* Main Button */
 .primary-button {
-    -fx-background-color: #f3d371;
+    -fx-background-color: #efc430;
     -fx-text-fill: white;
     -fx-font-size: 16px;
     -fx-padding: 10;
@@ -79,5 +79,25 @@
 }
 
 .primary-button:hover {
-    -fx-background-color: #f6be2d;
+    -fx-background-color: #f6bb07;
+}
+
+
+/* Background container */
+.background-pane {
+    -fx-background-color: linear-gradient(to bottom right, #f1f5f9, #eddb5f);
+    -fx-padding: 30px;
+    -fx-background-radius: 20px;
+
+    /* Shadow */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0.2, 0, 5);
+}
+
+.preview{
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.preview-text{
+    -fx-font-size: 16px;
 }

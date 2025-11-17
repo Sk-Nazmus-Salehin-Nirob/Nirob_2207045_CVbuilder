@@ -3,45 +3,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="700" prefWidth="800"
-            stylesheets="@styles.css"
-            xmlns="http://javafx.com/javafx/17.0.12"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.cvbuilder.controller.PreviewController">
+<AnchorPane prefHeight="700" prefWidth="800" styleClass="background-pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.PreviewController">
 
-    <Label layoutX="320" layoutY="20" styleClass="title" text="CV Preview"/>
+    <Label layoutX="320" layoutY="20" styleClass="title-label" text="CV Preview" />
 
-    <Button text="← Back"
-            layoutX="20" layoutY="20"
-            onAction="#goBack"
-            styleClass="back-button"/>
+    <Button layoutX="20" layoutY="20" onAction="#goBack" styleClass="back-button" text="← Back" />
 
-    <Label layoutX="40" layoutY="80" text="Full Name:"/>
-    <Label fx:id="nameLabel" layoutX="200" layoutY="80"/>
+    <Label layoutX="40" layoutY="80" prefHeight="26.0" prefWidth="210.0" styleClass="preview" text="Full Name:" />
+    <Label fx:id="nameLabel" layoutX="200" layoutY="80" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="120" text="Email Address:"/>
-    <Label fx:id="emailLabel" layoutX="200" layoutY="120"/>
+    <Label layoutX="40" layoutY="120" prefHeight="26.0" prefWidth="218.0" styleClass="preview" text="Email Address:" />
+    <Label fx:id="emailLabel" layoutX="200" layoutY="120" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="160" text="Phone Number:"/>
-    <Label fx:id="phoneLabel" layoutX="200" layoutY="160"/>
+    <Label layoutX="40" layoutY="160" prefHeight="26.0" prefWidth="218.0" styleClass="preview" text="Phone Number:" />
+    <Label fx:id="phoneLabel" layoutX="200" layoutY="160" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="200" text="Address:"/>
-    <Label fx:id="addressLabel" layoutX="200" layoutY="200"/>
+    <Label layoutX="40" layoutY="200" prefHeight="26.0" prefWidth="218.0" styleClass="preview" text="Address:" />
+    <Label fx:id="addressLabel" layoutX="200" layoutY="200" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="240" text="Educational Qualifications:"/>
-    <TextArea fx:id="educationText" layoutX="200" layoutY="235"
-              prefHeight="80" prefWidth="560" editable="false"/>
+    <Label layoutX="32.0" layoutY="288.0" prefHeight="80.0" prefWidth="201.0" styleClass="preview" text="Educational Qualifications:" />
+    <TextArea fx:id="educationText" editable="false" layoutX="260.0" layoutY="280.0" prefHeight="80" prefWidth="500.0" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="340" text="Skills:"/>
-    <TextArea fx:id="skillsText" layoutX="200" layoutY="335"
-              prefHeight="80" prefWidth="560" editable="false"/>
+    <Label layoutX="42.0" layoutY="402.0" styleClass="preview" text="Skills:" />
+    <TextArea fx:id="skillsText" editable="false" layoutX="260.0" layoutY="375.0" prefHeight="80" prefWidth="500.0" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="440" text="Work Experience:"/>
-    <TextArea fx:id="experienceText" layoutX="200" layoutY="435"
-              prefHeight="80" prefWidth="560" editable="false"/>
+    <Label layoutX="41.0" layoutY="495.0" styleClass="preview" text="Work Experience:" />
+    <TextArea fx:id="experienceText" editable="false" layoutX="260.0" layoutY="468.0" prefHeight="80" prefWidth="500.0" style="-fx-font-size: 16px;" />
 
-    <Label layoutX="40" layoutY="540" text="Projects:"/>
-    <TextArea fx:id="projectsText" layoutX="200" layoutY="535"
-              prefHeight="80" prefWidth="560" editable="false"/>
+    <Label layoutX="42.0" layoutY="589.0" styleClass="preview" text="Projects:" />
+    <TextArea fx:id="projectsText" editable="false" layoutX="260.0" layoutY="562.0" prefHeight="80" prefWidth="500.0" style="-fx-font-size: 16px;" />
 
 </AnchorPane>

@@ -4,7 +4,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.controller.HomeController">
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@styles.css"
+            styleClass="background-pane"
+            fx:controller="com.example.cvbuilder.controller.HomeController">
 
     <!-- Main Title -->
     <Text layoutX="128.0" layoutY="88.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="Create Your Own CV" />
