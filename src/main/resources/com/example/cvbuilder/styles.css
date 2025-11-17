@@ -8,6 +8,10 @@
     -fx-background-radius: 10px;
 }
 
+.button:hover {
+    -fx-background-color: #f6be2d;
+}
+
 .text {
     -fx-fill: #333;
 }

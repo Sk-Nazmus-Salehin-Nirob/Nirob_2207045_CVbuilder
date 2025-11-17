@@ -50,7 +50,7 @@
     </VBox>
 
     <!-- Centered Button -->
-    <Button layoutX="325" layoutY="630" onAction="#gotoPreview" prefWidth="150" styleClass="primary-button" text="Generate CV" />
+    <Button layoutX="325" layoutY="642.0" onAction="#gotoPreview" prefHeight="34.0" prefWidth="150" styleClass="primary-button" text="Generate CV" />
    <VBox layoutX="51.0" layoutY="277.0" prefHeight="80.0" prefWidth="50.0" />
 
 </AnchorPane>
